@@ -1,7 +1,7 @@
 package internal
 
 /**
- * the loop body should execute 10 times and print:
+ * the loop body should execute 5 times and print:
  * 0
  * 2
  * 4
