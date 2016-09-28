@@ -58,6 +58,8 @@ appearing on a separate line).
 
 Put your implementation in the file `/src/main/scala/internal/LoopUntil.scala`.
 
+You can test your program in your IDE, or from sbt with `sbt run`.
+
 ## Part 2: `for_loop`
 Implement a control-flow structure called `for_loop` that can be used like so:
 
