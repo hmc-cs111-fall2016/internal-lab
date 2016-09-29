@@ -9,17 +9,27 @@ package internal
  * 8
  */
 
+class ContinueException extends RuntimeException
+
 object WhileContinue extends App {
 
-  // define the new control-flow structures here
+  def continue = throw new ContinueException
+
+  def while_c(cond: =>Boolean)(body: =>Unit) = while(cond) {
+    try {
+      body
+    } catch {
+      case e: ContinueException => {}
+    }
+  }
 
   var i = -1
 
   while_c (i < 9) {
       i += 1
       if ( (i % 2) != 0 )
-          continue
+        continue
       println(i)
-  }        
+  }
 
 }
