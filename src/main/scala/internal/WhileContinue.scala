@@ -12,7 +12,23 @@ package internal
 object WhileContinue extends App {
 
   // define the new control-flow structures here
-
+  /*
+  def while_c (condition: =>Boolean) (body: =>Unit) {
+    while (condition) {
+      if (continue) 
+        while_c (condition)(body) 
+      else 
+        body
+    }
+  }
+  
+  
+  def continue: Boolean = {
+    true
+  }
+  */
+  
+  /*
   var i = -1
 
   while_c (i < 9) {
@@ -21,5 +37,5 @@ object WhileContinue extends App {
           continue
       println(i)
   }        
-
+	*/
 }
