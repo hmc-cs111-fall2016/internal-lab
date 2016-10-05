@@ -11,6 +11,11 @@ package internal
 object LoopUntil extends App {
 
   // define the new control-flow structure here
+  def loop_until(cond: =>Boolean)(code: =>Unit): Unit = {
+    if (!cond)
+      code
+      loop_until(cond){code}
+  }
 
   var i = 0
   
